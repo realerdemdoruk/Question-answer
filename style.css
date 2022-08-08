@@ -1,13 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f0f0f0;
 }
 
-.container{
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+h1 {
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.question {
+    border: 1px solid #9fa4a8;
+    background: transparent;
+    border-radius: 15px;
+    padding: 20px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.question.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+}
+
+.question-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.question-text {
+    display: none;
+    margin: 40px 0;
+}
+
+.question.active .question-text {
+    display: block;
+}
+
+i {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+}
+
+.question.question.active::after {
+    content: " ";
+    width: 100px;
+    height: 200px;
+    background: url(/img/bogac.png);
+    background-position: right;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 30px;
 }
