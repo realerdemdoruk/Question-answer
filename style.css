@@ -6,6 +6,7 @@
 
 body {
     background-color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
@@ -31,7 +32,7 @@ h1 {
 .question.active {
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
-    min-height: 200px;
+    min-height: 150px;
 }
 
 .question-title {
@@ -52,17 +53,4 @@ i {
     position: absolute;
     bottom: 10px;
     right: 50%;
-}
-
-.question.question.active::after {
-    content: " ";
-    width: 100px;
-    height: 200px;
-    background: url(/img/bogac.png);
-    background-position: right;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 0;
-    right: 30px;
 }
